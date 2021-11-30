@@ -1,0 +1,8 @@
+.rider/
+.idea/
+.vs/
+.vscode/
+Source/CombatPsycasts/.idea
+Source/CombatPsycasts/bin/*
+Source/CombatPsycasts/obj/*
+Source/CombatPsycasts/ScavengingExpansion.sln.DotSettings.user
