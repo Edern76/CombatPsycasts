@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <AbilityDef ParentName="PsycastBase">
+        <defName>CP_BrainExploder</defName>
+        <label>brain exploder</label>
+        <description>Overload the target's brain with raw psychic energy, causing it to violently explode.</description>
+        <level>6</level>
+        <iconPath>Psycasts/CP_BrainExploder</iconPath>
+        <writeCombatLog>True</writeCombatLog>
+        <statBases>
+            <Ability_EntropyGain>150</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
+        </statBases>
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <range>24.9</range>
+            <targetParams>
+              <canTargetSelf>True</canTargetSelf>
+              <canTargetAnimals>True</canTargetAnimals>
+              <canTargetLocations>False</canTargetLocations>
+              <canTargetMechs>False</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityBrainExploder">
+                <headExplodeChance>0.5</headExplodeChance>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>
