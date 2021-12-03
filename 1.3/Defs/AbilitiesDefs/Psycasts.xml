@@ -27,4 +27,30 @@
             </li>
         </comps>
     </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBase">
+        <defName>CP_PsychicGrenade</defName>
+        <label>psychic grenade</label>
+        <description>Concentrate psychic energy into an explosive projectile and hurl it towards the target.</description>
+        <level>5</level>
+        <iconPath>Psycasts/CP_PsychicGrenade</iconPath>
+        <writeCombatLog>True</writeCombatLog>
+        <statBases>
+            <Ability_EntropyGain>30</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <range>24.9</range>
+            <targetParams>
+              <canTargetSelf>False</canTargetSelf>
+              <canTargetLocations>True</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicSingleProjectile">
+                <projectileDef>CP_Proj_PsychicGrenade</projectileDef>
+            </li>
+        </comps>
+    </AbilityDef>
 </Defs>

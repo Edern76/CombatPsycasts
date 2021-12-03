@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="BasePsychicGrenade" ParentName="BaseGrenadeProjectile" Abstract="True">
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+          <texPath>Things/Projectile/Psychic_grenade</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.75</drawSize>
+        </graphicData>
+        <projectile>
+          <explosionRadius>1</explosionRadius>
+          <damageDef>Blunt</damageDef>
+          <damageAmountBase>25</damageAmountBase>
+          <explosionDelay>10</explosionDelay>
+          <soundExplode>Explosion_EMP</soundExplode>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BasePsychicGrenade">
+        <defName>CP_Proj_PsychicGrenade</defName>
+        <label>psychic grenade</label>
+    </ThingDef>
+</Defs>
