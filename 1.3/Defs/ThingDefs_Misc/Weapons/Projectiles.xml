@@ -20,4 +20,98 @@
         <defName>CP_Proj_PsychicGrenade</defName>
         <label>psychic grenade</label>
     </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>CP_Bullet_LightPsychicSlug</defName>
+      <label>light psychic slug</label>
+      <graphicData>
+        <texPath>Things/Projectile/Psychislug_shot</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>2</drawSize>
+      </graphicData>
+      <projectile>
+        <damageDef>Blunt</damageDef>
+        <damageAmountBase>8</damageAmountBase>
+        <speed>70</speed>
+      </projectile>
+      <modExtensions>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
+          <forceHitTargetChance>0.3</forceHitTargetChance>
+        </li>
+      </modExtensions>
+      <comps>
+        <li Class="CombatPsycasts.Comps.CompProperties_HomingProjectile">
+          <homingRecalculationInterval>1</homingRecalculationInterval>
+        </li>
+      </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>CP_Bullet_MediumPsychicSlug</defName>
+      <label>medium psychic slug</label>
+      <graphicData>
+        <texPath>Things/Projectile/Psychislug_shot_medium</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>2</drawSize>
+      </graphicData>
+      <projectile>
+        <damageDef>Blunt</damageDef>
+        <damageAmountBase>32</damageAmountBase>
+        <speed>60</speed>
+      </projectile>
+      <modExtensions>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
+          <forceHitTargetChance>0.75</forceHitTargetChance>
+        </li>
+      </modExtensions>
+      <comps>
+        <li Class="CombatPsycasts.Comps.CompProperties_HomingProjectile">
+          <homingRecalculationInterval>1</homingRecalculationInterval>
+        </li>
+      </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>CP_Bullet_HeavyPsychicSlug</defName>
+      <label>heavy psychic slug</label>
+      <graphicData>
+        <texPath>Things/Projectile/Psychislug_shot_heavy</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>2.75</drawSize>
+      </graphicData>
+      <projectile>
+        <damageDef>Blunt</damageDef>
+        <damageAmountBase>60</damageAmountBase>
+        <speed>60</speed>
+      </projectile>
+      <modExtensions>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
+          <forceHitTargetChance>0.99</forceHitTargetChance>
+        </li>
+      </modExtensions>
+      <comps>
+        <li Class="CombatPsycasts.Comps.CompProperties_HomingProjectile">
+          <homingRecalculationInterval>1</homingRecalculationInterval>
+        </li>
+      </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+      <defName>CP_Bullet_PsychicPellet</defName>
+      <label>psychic pellet</label>
+      <graphicData>
+        <texPath>Things/Projectile/Psychic_pellet</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>TransparentPostLight</shaderType>
+        <drawSize>1.5</drawSize>
+      </graphicData>
+      <projectile>
+        <damageDef>Blunt</damageDef>
+        <damageAmountBase>5</damageAmountBase>
+        <speed>70</speed>
+      </projectile>
+    </ThingDef>
 </Defs>

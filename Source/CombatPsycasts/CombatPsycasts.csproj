@@ -56,9 +56,20 @@
     <ItemGroup>
         <Compile Include="Bootstrap.cs" />
         <Compile Include="Comps\CompAbilityEffect_BrainExploder.cs" />
+        <Compile Include="Comps\CompAbilityEffect_PsychicShoot.cs" />
         <Compile Include="Comps\CompAbilityEffect_PsychicSingleProjectile.cs" />
+        <Compile Include="Comps\Comp_HomingProjectile.cs" />
         <Compile Include="DefOfs\ProjectileDefOf.cs" />
+        <Compile Include="Defs\DefModExtensions\PreciseProjectile.cs" />
+        <Compile Include="Harmony\HarmonyBase.cs" />
+        <Compile Include="Harmony\Patches\PatchAbilityTick.cs" />
+        <Compile Include="Harmony\Patches\PatchProjectileLaunch.cs" />
+        <Compile Include="Harmony\Patches\PatchProjectileTick.cs" />
+        <Compile Include="Harmony\Patches\PatchShotReport.cs" />
+        <Compile Include="Interfaces\ITickable.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\ProjectileUtils.cs" />
+        <Compile Include="Verbs\Verb_PsychicShoot.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

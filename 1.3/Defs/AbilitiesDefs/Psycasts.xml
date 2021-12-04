@@ -53,4 +53,121 @@
             </li>
         </comps>
     </AbilityDef>
+
+    <AbilityDef Name="PsycastBulletBase" ParentName="PsycastBase" Abstract="True">
+        <writeCombatLog>True</writeCombatLog>
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <range>24.9</range>
+            <targetParams>
+              <canTargetSelf>False</canTargetSelf>
+              <canTargetLocations>True</canTargetLocations>
+              <canTargetAnimals>True</canTargetAnimals>
+              <canTargetPawns>True</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBulletBase">
+        <defName>CP_LightPsychicSlug</defName>
+        <label>light psychic slug</label>
+        <description>Fire a burst of three small slugs of raw psychic energy.</description>
+        <level>1</level>
+        <iconPath>Psycasts/CP_PsychicSlug</iconPath>
+        <statBases>
+            <Ability_EntropyGain>5</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+                <verbs>
+                    <li>
+                      <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                      <hasStandardCommand>true</hasStandardCommand>
+                      <defaultProjectile>CP_Bullet_LightPsychicSlug</defaultProjectile>
+                      <warmupTime>0</warmupTime>
+                      <range>24.9</range>
+                      <burstShotCount>3</burstShotCount>
+                      <accuracyTouch>0.9</accuracyTouch>
+                      <accuracyShort>0.7</accuracyShort>
+                      <accuracyMedium>0.5</accuracyMedium>
+                      <accuracyLong>0.4</accuracyLong>
+                      <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                      <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+                      <soundCast>Shot_ChargeRifle</soundCast>
+                      <soundCastTail>GunTail_Medium</soundCastTail>
+                      <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBulletBase">
+        <defName>CP_MediumPsychicSlug</defName>
+        <label>medium psychic slug</label>
+        <description>Fire a medium sized slug of psychic energy at the target.</description>
+        <level>3</level>
+        <iconPath>Psycasts/CP_PsychicMediumSlug</iconPath>
+        <statBases>
+            <Ability_EntropyGain>25</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+                <verbs>
+                    <li>
+                      <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                      <hasStandardCommand>true</hasStandardCommand>
+                      <defaultProjectile>CP_Bullet_MediumPsychicSlug</defaultProjectile>
+                      <warmupTime>0</warmupTime>
+                      <range>35</range>
+                      <accuracyTouch>0.95</accuracyTouch>
+                      <accuracyShort>0.8</accuracyShort>
+                      <accuracyMedium>0.75</accuracyMedium>
+                      <accuracyLong>0.7</accuracyLong>
+                      <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                      <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                      <soundCast>Shot_ChargeRifle</soundCast>
+                      <soundCastTail>GunTail_Medium</soundCastTail>
+                      <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBulletBase">
+        <defName>CP_HeavyPsychicSlug</defName>
+        <label>heavy psychic slug</label>
+        <description>Fire a heavy slug of raw, concentrated psychic energy at the target.</description>
+        <level>6</level>
+        <iconPath>Psycasts/CP_PsychicHeavySlug</iconPath>
+        <statBases>
+            <Ability_EntropyGain>100</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+                <verbs>
+                    <li>
+                      <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                      <hasStandardCommand>true</hasStandardCommand>
+                      <defaultProjectile>CP_Bullet_HeavyPsychicSlug</defaultProjectile>
+                      <warmupTime>0</warmupTime>
+                      <range>50</range>
+                      <accuracyTouch>1</accuracyTouch>
+                      <accuracyShort>1</accuracyShort>
+                      <accuracyMedium>0.99</accuracyMedium>
+                      <accuracyLong>0.99</accuracyLong>
+                      <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                      <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                      <soundCast>ChargeLance_Fire</soundCast>
+                      <soundCastTail>GunTail_Heavy</soundCastTail>
+                      <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+            </li>
+        </comps>
+    </AbilityDef>
 </Defs>

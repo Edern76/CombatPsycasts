@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using CombatPsycasts.Harmony;
+using Verse;
 
 namespace CombatPsycasts
 {
@@ -7,6 +8,7 @@ namespace CombatPsycasts
     {
         static Bootstrap()
         {
+            HarmonyBase.ApplyPatches();
             Log.Message("[CombatPsycasts] Done intialization");
         }    
     }
