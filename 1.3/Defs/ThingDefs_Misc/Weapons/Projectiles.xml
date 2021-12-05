@@ -115,12 +115,17 @@
         <texPath>Things/Projectile/Psychic_pellet</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>TransparentPostLight</shaderType>
-        <drawSize>1.5</drawSize>
+        <drawSize>2</drawSize>
       </graphicData>
       <projectile>
         <damageDef>Blunt</damageDef>
         <damageAmountBase>5</damageAmountBase>
         <speed>70</speed>
       </projectile>
+      <modExtensions>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.FallbackBattleLogWeapon">
+          <fallbackWeapon>CP_DummyWeapon_DO_NOT_SPAWN</fallbackWeapon>
+        </li>
+      </modExtensions>
     </ThingDef>
 </Defs>

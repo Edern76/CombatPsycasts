@@ -14,11 +14,13 @@ namespace CombatPsycasts.Comps
         {
             this.compClass = typeof(CompAbilityEffect_PsychicShoot);
         }
-    }    
-    
-    public class CompAbilityEffect_PsychicShoot : CompAbilityEffect, IVerbOwner, IExposable, ILoadReferenceable, ITickable
+    }
+
+    public class CompAbilityEffect_PsychicShoot : CompAbilityEffect, IVerbOwner, IExposable, ILoadReferenceable,
+        ITickable
     {
-        public int Id = 4271342;
+        public virtual int Id => 4271342;
+
         public CompProperties_AbilityPsychicShoot Props => (CompProperties_AbilityPsychicShoot)this.props;
         private VerbTracker _verbTracker;
         
@@ -47,7 +49,7 @@ namespace CombatPsycasts.Comps
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
-            base.Apply(target, dest);
+            BaseApply(target, dest);
             if (VerbTracker.PrimaryVerb is Verb_PsychicShoot verbShoot)
             {
                 bool shot = verbShoot.TryStartCastOn(target);
@@ -59,7 +61,12 @@ namespace CombatPsycasts.Comps
             }
         }
 
-        public void DoTick()
+        protected void BaseApply(LocalTargetInfo target, LocalTargetInfo dest)
+        {
+            base.Apply(target, dest);
+        }
+
+        public virtual void DoTick()
         {
             this.VerbTracker.VerbsTick();
         }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>CP_CastPsychicPellets</defName>
+        <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
+        <reportString>firing psychic pellets.</reportString>
+    </JobDef>
+</Defs>

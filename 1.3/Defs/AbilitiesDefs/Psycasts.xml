@@ -170,4 +170,40 @@
             </li>
         </comps>
     </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBulletBase">
+        <defName>CP_PsychicPellets</defName>
+        <label>psychic pellets</label>
+        <description>Fire a continuous barrage of psychic pellets at the target, generating neural heat every second.</description>
+        <level>5</level>
+        <iconPath>Psycasts/CP_PsychicPellet</iconPath>
+        <statBases>
+            <Ability_EntropyGain>30</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_PsychicSustainedShoot">
+                <verbs>
+                    <li>
+                      <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                      <hasStandardCommand>true</hasStandardCommand>
+                      <defaultProjectile>CP_Bullet_PsychicPellet</defaultProjectile>
+                      <warmupTime>0</warmupTime>
+                      <range>50</range>
+                      <burstShotCount>5</burstShotCount>
+                      <accuracyTouch>0.9</accuracyTouch>
+                      <accuracyShort>0.7</accuracyShort>
+                      <accuracyMedium>0.5</accuracyMedium>
+                      <accuracyLong>0.4</accuracyLong>
+                      <stopBurstWithoutLos>true</stopBurstWithoutLos>
+                      <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                      <soundCast>Shot_ChargeRifle</soundCast>
+                      <soundCastTail>GunTail_Medium</soundCastTail>
+                      <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+                <sustainedJobDef>CP_CastPsychicPellets</sustainedJobDef>
+            </li>
+        </comps>
+    </AbilityDef>
 </Defs>
