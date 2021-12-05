@@ -39,6 +39,9 @@
         <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
           <forceHitTargetChance>0.3</forceHitTargetChance>
         </li>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.FallbackBattleLogWeapon">
+          <fallbackWeapon>CP_DummyWeapon_DO_NOT_SPAWN</fallbackWeapon>
+        </li>
       </modExtensions>
       <comps>
         <li Class="CombatPsycasts.Comps.CompProperties_HomingProjectile">
@@ -65,6 +68,9 @@
         <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
           <forceHitTargetChance>0.75</forceHitTargetChance>
         </li>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.FallbackBattleLogWeapon">
+          <fallbackWeapon>CP_DummyWeapon_DO_NOT_SPAWN</fallbackWeapon>
+        </li>
       </modExtensions>
       <comps>
         <li Class="CombatPsycasts.Comps.CompProperties_HomingProjectile">
@@ -90,6 +96,9 @@
       <modExtensions>
         <li Class="CombatPsycasts.Defs.DefModExtensions.PreciseProjectile">
           <forceHitTargetChance>0.99</forceHitTargetChance>
+        </li>
+        <li Class="CombatPsycasts.Defs.DefModExtensions.FallbackBattleLogWeapon">
+          <fallbackWeapon>CP_DummyWeapon_DO_NOT_SPAWN</fallbackWeapon>
         </li>
       </modExtensions>
       <comps>
