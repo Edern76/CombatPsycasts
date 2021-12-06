@@ -9,6 +9,7 @@ namespace CombatPsycasts.Harmony.Patches
     [HarmonyPatch("HitReportFor")]
     public class PatchShotReport
     {
+        /// <summary> Makes it so the chance of a psychic projectile hitting the intended target is independant from the pawn shooting skill </summary>
         [HarmonyPostfix]
         public static void Postfix(ref ShotReport __result, Thing caster, Verb verb, LocalTargetInfo target)
         {

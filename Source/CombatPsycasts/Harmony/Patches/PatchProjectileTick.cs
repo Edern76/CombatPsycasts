@@ -11,6 +11,7 @@ namespace CombatPsycasts.Harmony.Patches
     [HarmonyPatch("Tick")]
     public class PatchProjectileTick
     {
+        /// <summary> Redirects homing projectile to target's current position if it's different from it's last known position.</summary>
         [HarmonyPrefix]
         public static bool Prefix(Projectile __instance)
         {
