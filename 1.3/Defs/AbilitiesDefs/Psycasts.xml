@@ -206,4 +206,21 @@
             </li>
         </comps>
     </AbilityDef>
+
+    <AbilityDef ParentName="PsycastBulletBase">
+        <defName>CP_PsychicChoke</defName>
+        <label>psychic choke</label>
+        <description>Use psychic energy to block target's respiratory pathways, causing it to suffocate over the course of 10 seconds and consuming neural heat each second.</description>
+        <level>5</level>
+        <iconPath>Psycasts/CP_PsychicChoke</iconPath>
+        <statBases>
+            <Ability_EntropyGain>5</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+        </statBases>
+        <comps>
+            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicChoke">
+                <sustainedJobDef>CP_CastPsychicChoke</sustainedJobDef>
+            </li>
+        </comps>
+    </AbilityDef>
 </Defs>

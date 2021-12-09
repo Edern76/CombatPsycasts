@@ -5,4 +5,10 @@
         <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
         <reportString>firing psychic pellets.</reportString>
     </JobDef>
+
+    <JobDef>
+        <defName>CP_CastPsychicChoke</defName>
+        <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicChoke</driverClass>
+        <reportString>psychically choking TargetB.</reportString>
+    </JobDef>
 </Defs>

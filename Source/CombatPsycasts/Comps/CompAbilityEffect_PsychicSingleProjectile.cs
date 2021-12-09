@@ -13,7 +13,7 @@ namespace CombatPsycasts.Comps
             this.compClass = typeof(CompAbilityEffect_PsychicSingleProjectile);
         }
     }    
-    public class CompAbilityEffect_PsychicSingleProjectile : CompAbilityEffect
+    public class CompAbilityEffect_PsychicSingleProjectile : CompAbilityBase_CombatPsychic
     {
         public CompProperties_AbilityPsychicSingleProjectile Props =>
             (CompProperties_AbilityPsychicSingleProjectile)this.props;

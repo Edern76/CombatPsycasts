@@ -16,7 +16,7 @@ namespace CombatPsycasts.Comps
         }
     }
 
-    public class CompAbilityEffect_PsychicShoot : CompAbilityEffect, IVerbOwner, IExposable, ILoadReferenceable,
+    public class CompAbilityEffect_PsychicShoot : CompAbilityBase_CombatPsychic, IVerbOwner, IExposable, ILoadReferenceable,
         ITickable
     {
         public virtual int Id => 4271342;

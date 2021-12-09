@@ -55,11 +55,15 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Bootstrap.cs" />
+        <Compile Include="Comps\CompAbilityBase_CombatPsychic.cs" />
         <Compile Include="Comps\CompAbilityEffect_BrainExploder.cs" />
+        <Compile Include="Comps\CompAbilityEffect_PsychicChoke.cs" />
         <Compile Include="Comps\CompAbilityEffect_PsychicShoot.cs" />
         <Compile Include="Comps\CompAbilityEffect_PsychicSingleProjectile.cs" />
         <Compile Include="Comps\CompAbilityEffect_PsychicSustainedShoot.cs" />
         <Compile Include="Comps\Comp_HomingProjectile.cs" />
+        <Compile Include="Comps\HediffComp_ReducesOverTime.cs" />
+        <Compile Include="DefOfs\HediffDefOf.cs" />
         <Compile Include="DefOfs\ProjectileDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\FallbackBattleLogWeapon.cs" />
         <Compile Include="Defs\DefModExtensions\PreciseProjectile.cs" />
@@ -69,11 +73,14 @@
         <Compile Include="Harmony\Patches\PatchJobDriverEndJob.cs" />
         <Compile Include="Harmony\Patches\PatchProjectileLaunch.cs" />
         <Compile Include="Harmony\Patches\PatchProjectileTick.cs" />
+        <Compile Include="Harmony\Patches\PatchPsylinkGiveAbility.cs" />
         <Compile Include="Harmony\Patches\PatchShotReport.cs" />
         <Compile Include="Interfaces\IJobWithEndAction.cs" />
         <Compile Include="Interfaces\ITickable.cs" />
+        <Compile Include="Jobs\JobDriver_SustainPsychicChoke.cs" />
         <Compile Include="Jobs\JobDriver_SustainPsychicShoot.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Utils\HediffUtils.cs" />
         <Compile Include="Utils\ProjectileUtils.cs" />
         <Compile Include="Verbs\Verb_PsychicShoot.cs" />
     </ItemGroup>

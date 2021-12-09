@@ -8,13 +8,15 @@ namespace CombatPsycasts.Harmony.Patches
     [HarmonyPatch("EndJobWith")]
     public class PatchJobDriverEndJob
     {
-        [HarmonyPostfix]
-        public static void Postfix(JobDriver __instance)
+        [HarmonyPrefix]
+        public static bool Prefix(JobDriver __instance)
         {
             if (__instance is IJobWithEndAction job)
             {
                 job.OnEnd();
-            }    
+            }
+
+            return true;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace CombatPsycasts.Comps
         public float headExplodeChance = 0.5f;
     }
     
-    public class CompAbilityEffect_BrainExploder : CompAbilityEffect
+    public class CompAbilityEffect_BrainExploder : CompAbilityBase_CombatPsychic
     {
         public CompProperties_AbilityBrainExploder Props => (CompProperties_AbilityBrainExploder)this.props;
 
