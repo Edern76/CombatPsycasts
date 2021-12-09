@@ -207,12 +207,24 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef ParentName="PsycastBulletBase">
+    <AbilityDef>
         <defName>CP_PsychicChoke</defName>
         <label>psychic choke</label>
         <description>Use psychic energy to block target's respiratory pathways, causing it to suffocate over the course of 10 seconds and consuming neural heat each second.</description>
         <level>5</level>
+        <writeCombatLog>True</writeCombatLog>
         <iconPath>Psycasts/CP_PsychicChoke</iconPath>
+        <verbProperties>
+            <warmupTime>1</warmupTime>
+            <range>24.9</range>
+            <targetParams>
+              <canTargetSelf>False</canTargetSelf>
+              <canTargetLocations>True</canTargetLocations>
+              <canTargetAnimals>True</canTargetAnimals>
+              <canTargetPawns>True</canTargetPawns>
+              <canTargetMechs>False</canTargetMechs>
+            </targetParams>
+        </verbProperties>
         <statBases>
             <Ability_EntropyGain>5</Ability_EntropyGain>
             <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
