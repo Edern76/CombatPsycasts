@@ -75,44 +75,19 @@ namespace CombatPsycasts.Jobs
 
         public void OnEnd()
         {
-            Log.Message("End start");
             if (comp != null && comp?.ShouldBeChoking != null)
             {
-                Log.Message("Comp condition");
                 comp.ShouldBeChoking = false;
-                Log.Message("After comp variable");
             }
 
-            Log.Message("Before victim");
-            Log.Message($"Victim : {victim}");
             if (victim != null && victim?.health != null && victim?.health?.hediffSet != null && !victim.health.Dead)
             {
                 HediffDef psyChokeHediff = CombatPsycasts.DefOfs.HediffDefOf.CP_Hediff_PsychicChoke;
-                if (psyChokeHediff == null)
-                {
-                    Log.Error("Psychic choke hediff is null");
-                }
-                else if (victim == null)
-                {
-                    Log.Error("Victim is null");
-                }    
-                else if (victim.health == null)
-                {
-                    Log.Error("Victim health is null");
-                }    
-                else if (victim.health.hediffSet == null)
-                {
-                    Log.Error("Victim hediffset is null");
-                }    
                 HediffComp_ReducesOverTime compReduce = victim.health.hediffSet
                     .GetFirstHediffOfDef(psyChokeHediff)?.TryGetComp<HediffComp_ReducesOverTime>();
                 if (compReduce != null)
                 {
                     compReduce.ShouldReduce = true;
-                }
-                else
-                {
-                    Log.Message("CompReduce was null");
                 }
             }
         }

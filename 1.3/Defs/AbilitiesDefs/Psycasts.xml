@@ -9,11 +9,11 @@
         <writeCombatLog>True</writeCombatLog>
         <statBases>
             <Ability_EntropyGain>150</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
+            <Ability_PsyfocusCost>0.08</Ability_PsyfocusCost>
         </statBases>
         <verbProperties>
-            <warmupTime>1</warmupTime>
-            <range>24.9</range>
+            <warmupTime>5</warmupTime>
+            <range>17.9</range>
             <targetParams>
               <canTargetSelf>True</canTargetSelf>
               <canTargetAnimals>True</canTargetAnimals>
@@ -36,12 +36,12 @@
         <iconPath>Psycasts/CP_PsychicGrenade</iconPath>
         <writeCombatLog>True</writeCombatLog>
         <statBases>
-            <Ability_EntropyGain>30</Ability_EntropyGain>
+            <Ability_EntropyGain>10</Ability_EntropyGain>
             <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
         </statBases>
         <verbProperties>
-            <warmupTime>1</warmupTime>
-            <range>24.9</range>
+            <warmupTime>2</warmupTime>
+            <range>14.9</range>
             <targetParams>
               <canTargetSelf>False</canTargetSelf>
               <canTargetLocations>True</canTargetLocations>
@@ -76,7 +76,7 @@
         <iconPath>Psycasts/CP_PsychicSlug</iconPath>
         <statBases>
             <Ability_EntropyGain>5</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+            <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
         </statBases>
         <comps>
             <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
@@ -110,8 +110,8 @@
         <level>3</level>
         <iconPath>Psycasts/CP_PsychicMediumSlug</iconPath>
         <statBases>
-            <Ability_EntropyGain>25</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+            <Ability_EntropyGain>13</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.035</Ability_PsyfocusCost>
         </statBases>
         <comps>
             <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
@@ -121,7 +121,7 @@
                       <hasStandardCommand>true</hasStandardCommand>
                       <defaultProjectile>CP_Bullet_MediumPsychicSlug</defaultProjectile>
                       <warmupTime>0</warmupTime>
-                      <range>35</range>
+                      <range>24.9</range>
                       <accuracyTouch>0.95</accuracyTouch>
                       <accuracyShort>0.8</accuracyShort>
                       <accuracyMedium>0.75</accuracyMedium>
@@ -145,8 +145,11 @@
         <iconPath>Psycasts/CP_PsychicHeavySlug</iconPath>
         <statBases>
             <Ability_EntropyGain>100</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+            <Ability_PsyfocusCost>0.07</Ability_PsyfocusCost>
         </statBases>
+        <verbProperties>
+            <warmupTime>3</warmupTime>
+        </verbProperties>
         <comps>
             <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
                 <verbs>
@@ -177,9 +180,12 @@
         <description>Fire a continuous barrage of psychic pellets at the target, generating neural heat every second.</description>
         <level>5</level>
         <iconPath>Psycasts/CP_PsychicPellet</iconPath>
+        <verbProperties>
+            <range>20</range>
+        </verbProperties>
         <statBases>
-            <Ability_EntropyGain>30</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+            <Ability_EntropyGain>10</Ability_EntropyGain>
+            <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
         </statBases>
         <comps>
             <li Class="CombatPsycasts.Comps.CompProperties_PsychicSustainedShoot">
@@ -189,7 +195,7 @@
                       <hasStandardCommand>true</hasStandardCommand>
                       <defaultProjectile>CP_Bullet_PsychicPellet</defaultProjectile>
                       <warmupTime>0</warmupTime>
-                      <range>50</range>
+                      <range>20</range>
                       <burstShotCount>5</burstShotCount>
                       <accuracyTouch>0.9</accuracyTouch>
                       <accuracyShort>0.7</accuracyShort>
@@ -216,10 +222,10 @@
         <iconPath>Psycasts/CP_PsychicChoke</iconPath>
         <verbProperties>
             <warmupTime>1</warmupTime>
-            <range>24.9</range>
+            <range>20</range>
             <targetParams>
               <canTargetSelf>False</canTargetSelf>
-              <canTargetLocations>True</canTargetLocations>
+              <canTargetLocations>False</canTargetLocations>
               <canTargetAnimals>True</canTargetAnimals>
               <canTargetPawns>True</canTargetPawns>
               <canTargetMechs>False</canTargetMechs>
@@ -227,7 +233,7 @@
         </verbProperties>
         <statBases>
             <Ability_EntropyGain>5</Ability_EntropyGain>
-            <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
+            <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
         </statBases>
         <comps>
             <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicChoke">
