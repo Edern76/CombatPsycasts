@@ -209,6 +209,7 @@
                     </li>
                 </verbs>
                 <sustainedJobDef>CP_CastPsychicPellets</sustainedJobDef>
+                <maxSustainTicks>6000</maxSustainTicks>
             </li>
         </comps>
     </AbilityDef>
