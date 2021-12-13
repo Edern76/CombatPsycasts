@@ -33,7 +33,11 @@
                 <li>OnSkin</li>
             </layers>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
         </apparel>
+		<tradeability>None</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
         <colorGenerator Class="ColorGenerator_StandardApparel" />
     </ThingDef>
 </Defs>
