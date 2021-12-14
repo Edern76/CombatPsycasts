@@ -65,6 +65,7 @@
         <Compile Include="Comps\HediffComp_ReducesOverTime.cs" />
         <Compile Include="DefOfs\HediffDefOf.cs" />
         <Compile Include="DefOfs\ProjectileDefOf.cs" />
+        <Compile Include="DefOfs\SoundDefOf.cs" />
         <Compile Include="Defs\DefModExtensions\FallbackBattleLogWeapon.cs" />
         <Compile Include="Defs\DefModExtensions\PreciseProjectile.cs" />
         <Compile Include="Harmony\HarmonyBase.cs" />
@@ -73,7 +74,6 @@
         <Compile Include="Harmony\Patches\PatchJobDriverEndJob.cs" />
         <Compile Include="Harmony\Patches\PatchProjectileLaunch.cs" />
         <Compile Include="Harmony\Patches\PatchProjectileTick.cs" />
-        <Compile Include="Harmony\Patches\PatchPsylinkGiveAbility.cs" />
         <Compile Include="Harmony\Patches\PatchShotReport.cs" />
         <Compile Include="Interfaces\IJobWithEndAction.cs" />
         <Compile Include="Interfaces\ITickable.cs" />

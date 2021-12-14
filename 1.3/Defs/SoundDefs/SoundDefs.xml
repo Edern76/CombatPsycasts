@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <SoundDef>
+        <defName>CP_HeadExplosion</defName>
+        <context>MapOnly</context>
+        <priorityMode>PrioritizeNearest</priorityMode>
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Effects/Brain_Exploder/head_explode</clipPath>
+              </li>
+            </grains>
+            <volumeRange>70~70</volumeRange>
+            <distRange>1~30</distRange>
+          </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

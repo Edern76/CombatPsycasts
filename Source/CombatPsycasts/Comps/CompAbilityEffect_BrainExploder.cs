@@ -1,5 +1,7 @@
 using RimWorld;
 using Verse;
+using Verse.Sound;
+using SoundDefOf = CombatPsycasts.DefOfs.SoundDefOf;
 
 namespace CombatPsycasts.Comps
 {
@@ -33,6 +35,8 @@ namespace CombatPsycasts.Comps
                 {
                     toApply.SetAmount(999);
                     toApply.SetAllowDamagePropagation(true);
+                    SoundDefOf.CP_HeadExplosion.PlayOneShot(SoundInfo.InMap((TargetInfo)(Thing)target));
+                    target.health.DropBloodFilth();
                 }
                 else
                 {

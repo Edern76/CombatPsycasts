@@ -214,7 +214,7 @@
         </comps>
     </AbilityDef>
 
-    <AbilityDef>
+    <AbilityDef ParentName="PsycastBase">
         <defName>CP_PsychicChoke</defName>
         <label>psychic choke</label>
         <description>Use psychic energy to block target's respiratory pathways, causing it to suffocate over the course of 10 seconds and consuming neural heat each second.</description>
