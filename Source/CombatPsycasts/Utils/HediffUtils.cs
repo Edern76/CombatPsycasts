@@ -1,3 +1,4 @@
+using CombatPsycasts.Comps;
 using Verse;
 
 namespace CombatPsycasts.Utils
@@ -15,6 +16,12 @@ namespace CombatPsycasts.Utils
 
             hediffSet.GetFirstHediffOfDef(hediff).Severity += severity;
 
+        }
+
+        public static Hediff FindLethalInstigatorHediff(this Pawn pawn)
+        {
+            return pawn?.health?.hediffSet?.hediffs.Find(
+                hediff => hediff.TryGetComp<HediffComp_HasInstigator>() is HediffComp_HasInstigator comp && comp.Props.isLethal);
         }
     }
 }

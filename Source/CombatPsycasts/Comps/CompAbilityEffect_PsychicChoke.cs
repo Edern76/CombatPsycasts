@@ -71,6 +71,7 @@ namespace CombatPsycasts.Comps
                 if (ShouldBeChoking)
                 {
                     HediffUtils.AddOrUpdateHediffWithSeverity(this.curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke, this.curTarget.Pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Neck).FirstOrDefault(), 0.10f);
+                    this.curTarget.Pawn?.FindLethalInstigatorHediff()?.TryGetComp<HediffComp_HasInstigator>()?.SetInstigator(this.parent.pawn);
                 }
 
                 this.TicksSinceLastSecond = 0;

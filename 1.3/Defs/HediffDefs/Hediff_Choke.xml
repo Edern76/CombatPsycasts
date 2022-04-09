@@ -198,6 +198,9 @@
             <li Class="CombatPsycasts.Comps.HediffCompProperties_ReducesOverTime">
                 <ticksToReduction>6</ticksToReduction>
             </li>
+			<li Class="CombatPsycasts.Comps.HediffCompProperties_HasInstigator">
+                <isLethal>true</isLethal>
+            </li>
         </comps>
     </HediffDef>
 </Defs>

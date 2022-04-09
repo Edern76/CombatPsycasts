@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <JobDef>
+        <defName>CP_CastLightSlug</defName>
+        <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
+        <reportString>firing light psychic slug.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>CP_CastMediumSlug</defName>
+        <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
+        <reportString>firing medium psychic slug.</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>CP_CastHeavySlug</defName>
+        <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
+        <reportString>firing heavy psychic slug.</reportString>
+    </JobDef>
+
+    <JobDef>
         <defName>CP_CastPsychicPellets</defName>
         <driverClass>CombatPsycasts.Jobs.JobDriver_SustainPsychicShoot</driverClass>
         <reportString>firing psychic pellets.</reportString>

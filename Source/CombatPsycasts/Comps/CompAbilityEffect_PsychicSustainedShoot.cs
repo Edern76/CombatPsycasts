@@ -70,10 +70,10 @@ namespace CombatPsycasts.Comps
         public void SustainedTick()
         {
             this.TicksSinceLastSecond++;
-            if (ShouldBeFiring && (forceFirstShot || ( ShouldContinueFiring() && this.TicksSinceLastSecond.TicksToSeconds() > 1.0)))
+            if (ShouldBeFiring && (forceFirstShot || ( ShouldContinueFiring() && this.TicksSinceLastSecond.TicksToSeconds() > this.parent.verb.verbProps.warmupTime)))
             {
                 if (VerbTracker.PrimaryVerb is Verb_PsychicShoot verbShoot)
-                {                    
+                {
                     this.TicksSinceLastSecond = 0;
                     if (!this.forceFirstShot)
                     {

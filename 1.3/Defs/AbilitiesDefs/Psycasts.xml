@@ -79,7 +79,7 @@
             <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
         </statBases>
         <comps>
-            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+            <li Class="CombatPsycasts.Comps.CompProperties_PsychicSustainedShoot">
                 <verbs>
                     <li>
                       <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
@@ -99,6 +99,8 @@
                       <muzzleFlashScale>9</muzzleFlashScale>
                     </li>
                 </verbs>
+                <sustainedJobDef>CP_CastLightSlug</sustainedJobDef>
+                <maxSustainTicks>6000</maxSustainTicks>
             </li>
         </comps>
     </AbilityDef>
@@ -114,7 +116,7 @@
             <Ability_PsyfocusCost>0.035</Ability_PsyfocusCost>
         </statBases>
         <comps>
-            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+            <li Class="CombatPsycasts.Comps.CompProperties_PsychicSustainedShoot">
                 <verbs>
                     <li>
                       <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
@@ -133,6 +135,8 @@
                       <muzzleFlashScale>9</muzzleFlashScale>
                     </li>
                 </verbs>
+                <sustainedJobDef>CP_CastMediumSlug</sustainedJobDef>
+                <maxSustainTicks>6000</maxSustainTicks>
             </li>
         </comps>
     </AbilityDef>
@@ -151,7 +155,7 @@
             <warmupTime>3</warmupTime>
         </verbProperties>
         <comps>
-            <li Class="CombatPsycasts.Comps.CompProperties_AbilityPsychicShoot">
+            <li Class="CombatPsycasts.Comps.CompProperties_PsychicSustainedShoot">
                 <verbs>
                     <li>
                       <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
@@ -170,6 +174,8 @@
                       <muzzleFlashScale>9</muzzleFlashScale>
                     </li>
                 </verbs>
+                <sustainedJobDef>CP_CastHeavySlug</sustainedJobDef>
+                <maxSustainTicks>6000</maxSustainTicks>
             </li>
         </comps>
     </AbilityDef>
