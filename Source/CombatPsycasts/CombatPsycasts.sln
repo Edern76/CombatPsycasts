@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombatPsycasts", "CombatPsycasts.csproj", "{DEF86BBB-8C64-43FB-AAD4-E41078A0C16C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VFECP", "..\VFECP\VFECP.csproj", "{196EDDD3-4514-4F0F-B629-73024DD8C8D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{DEF86BBB-8C64-43FB-AAD4-E41078A0C16C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEF86BBB-8C64-43FB-AAD4-E41078A0C16C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEF86BBB-8C64-43FB-AAD4-E41078A0C16C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{196EDDD3-4514-4F0F-B629-73024DD8C8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{196EDDD3-4514-4F0F-B629-73024DD8C8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{196EDDD3-4514-4F0F-B629-73024DD8C8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{196EDDD3-4514-4F0F-B629-73024DD8C8D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98879D24-579A-4440-AD92-D09855B4B444}
 	EndGlobalSection
 EndGlobal
