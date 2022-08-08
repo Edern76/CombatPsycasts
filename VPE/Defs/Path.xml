@@ -2,11 +2,11 @@
 <Defs>
     <VanillaPsycastsExpanded.PsycasterPathDef>
         <defName>CP_Combat</defName>
-        <label>combat</label>
-        <description>Combat psycasts are focused on getting right in the thick of things and fighting it out.</description>
+        <label>kinecticist</label>
+        <description>Kinetic psycasts are focused on transforming psychic power into raw kinetic energy to attack enemies.</description>
 		<background>UI/PsycastBackgrounds/CombatPsycastsBackground_AI</background>
 		<altBackground>UI/PsycastBackgrounds/CombatPsycastsBackground_AI</altBackground>
         <tab>Psycasts</tab>
-        <tooltip>Combat psycasters are adept at using their abilities offensively to attack the enemy.</tooltip>
+        <tooltip>Kineticists are adept at killing or maiming foes from a distance. They can shoot bolts of raw energy that have a chance to be homing, suffocate enemies from afar or make a creature's brain explode.</tooltip>
     </VanillaPsycastsExpanded.PsycasterPathDef>
 </Defs>
