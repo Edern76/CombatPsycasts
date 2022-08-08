@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>CP_Combat</defName>
+        <label>combat</label>
+        <description>Combat psycasts are focused on getting right in the thick of things and fighting it out.</description>
+        <backgroundColor>(48, 25, 52)</backgroundColor>
+        <width>40</width>
+        <height>50</height>
+        <tab>Psycasts</tab>
+        <tooltip>Combat psycasters are adept at using their abilities offensively to attack the enemy.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatPsycasts\VPE\Assemblies\VFECP.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.dll
