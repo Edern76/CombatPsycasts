@@ -17,6 +17,7 @@
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Royalty</li>
         <li>brrainz.harmony</li>
+		<li>vanillaexpanded.vpsycastse</li>
       </loadAfter>
     <packageId>Edern.CombatPsycasts</packageId>
     <description>Commissioned mod for Rimworld that aims to provide more combat-oriented psycasts options</description>

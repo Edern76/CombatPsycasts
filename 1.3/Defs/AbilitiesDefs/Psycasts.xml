@@ -85,7 +85,7 @@
                       <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
                       <hasStandardCommand>true</hasStandardCommand>
                       <defaultProjectile>CP_Bullet_LightPsychicSlug</defaultProjectile>
-                      <warmupTime>0</warmupTime>
+                      <warmupTime>0.5</warmupTime>
                       <range>24.9</range>
                       <burstShotCount>3</burstShotCount>
                       <accuracyTouch>0.9</accuracyTouch>
