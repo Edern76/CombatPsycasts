@@ -1,9 +1,7 @@
 using System.Linq;
-using CombatPsycasts.Comps;
 using CombatPsycasts.Interfaces;
 using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace CombatPsycasts.Harmony.Patches
 {
@@ -14,10 +12,8 @@ namespace CombatPsycasts.Harmony.Patches
         [HarmonyPostfix]
         public static void Postfix(Ability __instance)
         {
-            foreach (ITickable tickable in __instance.comps.Where(c => c is ITickable).Cast<ITickable>())
-            {
-                tickable.DoTick();
-            }
+            if (__instance?.comps == null) return;
+            foreach (var tickable in __instance.comps.OfType<ITickable>()) tickable.DoTick();
         }
     }
 }

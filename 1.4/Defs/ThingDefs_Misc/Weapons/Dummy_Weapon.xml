@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef>
+        <defName>CP_DummyWeapon_DO_NOT_SPAWN</defName>
+        <thingClass>ThingWithComps</thingClass>
+        <label>psychic abilities</label>
+        <description>Only here so that the battle log doesn't break when someone is hit by a psychic ability.</description>
+    </ThingDef>
+</Defs>

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "06ehBz1zZNz1b0fF4XgY3vWn3NBgDjMsgfldpa2Muq+TCKiUgN4Jw7rQL7oF6yvmGE2MTmimoR1yRAMB5v10EA==",
+  "dgSpecHash": "3sJIoj4os+qJkNL+zK7H8J/omV/CQ7xUhzo79PdyrtRSnI/1nHB2pcIW3N3fltxY0oWf1j1gk6j9n/tCY5D8Rg==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\legod\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3389\\krafs.rimworld.ref.1.3.3389.nupkg.sha512"
+    "C:\\Users\\legod\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3541\\krafs.rimworld.ref.1.4.3541.nupkg.sha512"
   ],
   "logs": []
 }
