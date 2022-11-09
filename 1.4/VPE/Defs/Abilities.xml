@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>CP_BrainExploder</defName>
+        <label>brain exploder</label>
+        <description>Overload the target's brain with raw psychic energy, causing it to violently explode.</description>
+        <iconPath>Psycasts/CP_BrainExploder</iconPath>
+        <castTime>300</castTime>
+        <range>17.9</range>
+        <abilityClass>VFECP.Ability_BrainExploder</abilityClass>
+        <targetingParameters>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+            <canTargetLocations>False</canTargetLocations>
+            <canTargetMechs>False</canTargetMechs>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>5</level>
+                <order>1</order>
+                <psyfocusCost>0.08</psyfocusCost>
+                <entropyGain>150</entropyGain>
+                <prerequisites>
+                    <li>CP_PsychicGrenade</li>
+                    <li>CP_PsychicPellets</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Combat" />
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>CP_PsychicGrenade</defName>
+        <label>psychic grenade</label>
+        <description>Concentrate psychic energy into an explosive projectile and hurl it towards the target.</description>
+        <iconPath>Psycasts/CP_PsychicGrenade</iconPath>
+        <castTime>120</castTime>
+        <range>14.9</range>
+        <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+        <targetingParameters>
+            <canTargetSelf>False</canTargetSelf>
+            <canTargetLocations>True</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.02</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>CP_HeavyPsychicSlug</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Combat" />
+            <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+                <projectile>CP_Proj_PsychicGrenade</projectile>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef Name="CP_PsycastBulletBase" Abstract="True" ParentName="VPE_PsycastBase">
+        <castTime>60</castTime>
+        <range>24.9</range>
+        <jobDef>CP_CastAbilityContinuous</jobDef>
+        <abilityClass>VFECP.Ability_ShootProjectileContinuous</abilityClass>
+        <needsTicking>true</needsTicking>
+        <targetingParameters>
+            <canTargetSelf>False</canTargetSelf>
+            <canTargetLocations>True</canTargetLocations>
+            <canTargetAnimals>True</canTargetAnimals>
+            <canTargetPawns>True</canTargetPawns>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VFECP.AbilityExtension_Combat" />
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="CP_PsycastBulletBase">
+        <defName>CP_LightPsychicSlug</defName>
+        <label>light psychic slug</label>
+        <description>Fire a burst of three small slugs of raw psychic energy.</description>
+        <iconPath>Psycasts/CP_PsychicSlug</iconPath>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.01</psyfocusCost>
+                <entropyGain>5</entropyGain>
+            </li>
+            <li Class="VFECP.AbilityExtension_Verbs">
+                <verbs>
+                    <li>
+                        <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>CP_Bullet_LightPsychicSlug</defaultProjectile>
+                        <warmupTime>0</warmupTime>
+                        <range>24.9</range>
+                        <burstShotCount>3</burstShotCount>
+                        <accuracyTouch>0.9</accuracyTouch>
+                        <accuracyShort>0.7</accuracyShort>
+                        <accuracyMedium>0.5</accuracyMedium>
+                        <accuracyLong>0.4</accuracyLong>
+                        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+                        <soundCast>Shot_ChargeRifle</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+                <maxSustainTicks>6000</maxSustainTicks>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="CP_PsycastBulletBase">
+        <defName>CP_MediumPsychicSlug</defName>
+        <label>medium psychic slug</label>
+        <description>Fire a medium sized slug of psychic energy at the target.</description>
+        <iconPath>Psycasts/CP_PsychicMediumSlug</iconPath>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>2</level>
+                <order>1</order>
+                <psyfocusCost>0.035</psyfocusCost>
+                <entropyGain>13</entropyGain>
+                <prerequisites>
+                    <li>CP_LightPsychicSlug</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Verbs">
+                <verbs>
+                    <li>
+                        <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>CP_Bullet_MediumPsychicSlug</defaultProjectile>
+                        <warmupTime>0</warmupTime>
+                        <range>24.9</range>
+                        <accuracyTouch>0.95</accuracyTouch>
+                        <accuracyShort>0.8</accuracyShort>
+                        <accuracyMedium>0.75</accuracyMedium>
+                        <accuracyLong>0.7</accuracyLong>
+                        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                        <soundCast>Shot_ChargeRifle</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+                <maxSustainTicks>6000</maxSustainTicks>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="CP_PsycastBulletBase">
+        <defName>CP_HeavyPsychicSlug</defName>
+        <label>heavy psychic slug</label>
+        <description>Fire a heavy slug of raw, concentrated psychic energy at the target.</description>
+        <iconPath>Psycasts/CP_PsychicHeavySlug</iconPath>
+        <castTime>180</castTime>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>3</level>
+                <order>1</order>
+                <psyfocusCost>0.07</psyfocusCost>
+                <entropyGain>100</entropyGain>
+                <prerequisites>
+                    <li>CP_MediumPsychicSlug</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Verbs">
+                <verbs>
+                    <li>
+                        <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>CP_Bullet_MediumPsychicSlug</defaultProjectile>
+                        <warmupTime>0</warmupTime>
+                        <range>24.9</range>
+                        <accuracyTouch>0.95</accuracyTouch>
+                        <accuracyShort>0.8</accuracyShort>
+                        <accuracyMedium>0.75</accuracyMedium>
+                        <accuracyLong>0.7</accuracyLong>
+                        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                        <soundCast>Shot_ChargeRifle</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+                <maxSustainTicks>6000</maxSustainTicks>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="CP_PsycastBulletBase">
+        <defName>CP_PsychicPellets</defName>
+        <label>psychic pellets</label>
+        <description>Fire a continuous barrage of psychic pellets at the target, generating neural heat every second.</description>
+        <range>20</range>
+        <iconPath>Psycasts/CP_PsychicPellet</iconPath>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>4</level>
+                <order>2</order>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>CP_HeavyPsychicSlug</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Verbs">
+                <verbs>
+                    <li>
+                        <verbClass>CombatPsycasts.Verbs.Verb_PsychicShoot</verbClass>
+                        <hasStandardCommand>true</hasStandardCommand>
+                        <defaultProjectile>CP_Bullet_PsychicPellet</defaultProjectile>
+                        <warmupTime>0</warmupTime>
+                        <range>20</range>
+                        <burstShotCount>5</burstShotCount>
+                        <accuracyTouch>0.9</accuracyTouch>
+                        <accuracyShort>0.7</accuracyShort>
+                        <accuracyMedium>0.5</accuracyMedium>
+                        <accuracyLong>0.4</accuracyLong>
+                        <stopBurstWithoutLos>true</stopBurstWithoutLos>
+                        <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                        <soundCast>Shot_ChargeRifle</soundCast>
+                        <soundCastTail>GunTail_Medium</soundCastTail>
+                        <muzzleFlashScale>9</muzzleFlashScale>
+                    </li>
+                </verbs>
+                <maxSustainTicks>6000</maxSustainTicks>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>CP_PsychicChoke</defName>
+        <label>psychic choke</label>
+        <description>Use psychic energy to block target's respiratory pathways, causing it to suffocate over the course of 10 seconds and consuming neural heat each second.</description>
+        <iconPath>Psycasts/CP_PsychicChoke</iconPath>
+        <castTime>60</castTime>
+        <range>20</range>
+        <jobDef>CP_CastAbilityContinuous</jobDef>
+        <abilityClass>VFECP.Ability_PsychicChoke</abilityClass>
+        <targetingParameters>
+            <canTargetSelf>False</canTargetSelf>
+            <canTargetLocations>False</canTargetLocations>
+            <canTargetAnimals>True</canTargetAnimals>
+            <canTargetPawns>True</canTargetPawns>
+            <canTargetMechs>False</canTargetMechs>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>CP_Combat</path>
+                <level>5</level>
+                <order>2</order>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>5</entropyGain>
+                <prerequisites>
+                    <li>CP_PsychicGrenade</li>
+                    <li>CP_PsychicPellets</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECP.AbilityExtension_Combat" />
+            <li Class="VFECP.AbilityExtension_Continuous" />
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+</Defs>

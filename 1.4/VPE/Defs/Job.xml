@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>CP_CastAbilityContinuous</defName>
+        <driverClass>VFECP.JobDriver_CastAbilityContinuous</driverClass>
+        <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+      </JobDef>
+</Defs>
