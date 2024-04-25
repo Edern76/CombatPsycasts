@@ -38,7 +38,7 @@ namespace CombatPsycasts.Comps
             base.CanApplyOn(target, dest) && target.Pawn is Pawn pawn 
                                           && pawn.health.hediffSet
                                                         .GetNotMissingParts()
-                                                        .Any(p => p.def == BodyPartDefOf.Neck);
+                                                        .Any(p => p.def == CombatPsycasts.DefOfs.BodyPartDefOf.Neck);
 
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
@@ -54,7 +54,7 @@ namespace CombatPsycasts.Comps
                     {
                         hediff.TryGetComp<HediffComp_ReducesOverTime>().ShouldReduce = false;
                     }    
-                    HediffUtils.AddOrUpdateHediffWithSeverity(this.curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke, this.curTarget.Pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Neck).FirstOrDefault(), 0.05f);
+                    HediffUtils.AddOrUpdateHediffWithSeverity(this.curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke, this.curTarget.Pawn.def.race.body.GetPartsWithDef(CombatPsycasts.DefOfs.BodyPartDefOf.Neck).FirstOrDefault(), 0.05f);
                     Job toStart = JobMaker.MakeJob(Props.sustainedJobDef, this.parent.pawn, curTarget);
                     this.parent.pawn.jobs.TryTakeOrderedJob(toStart);
                 }
@@ -70,7 +70,7 @@ namespace CombatPsycasts.Comps
 
                 if (ShouldBeChoking)
                 {
-                    HediffUtils.AddOrUpdateHediffWithSeverity(this.curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke, this.curTarget.Pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Neck).FirstOrDefault(), 0.10f);
+                    HediffUtils.AddOrUpdateHediffWithSeverity(this.curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke, this.curTarget.Pawn.def.race.body.GetPartsWithDef(CombatPsycasts.DefOfs.BodyPartDefOf.Neck).FirstOrDefault(), 0.10f);
                     this.curTarget.Pawn?.FindLethalInstigatorHediff()?.TryGetComp<HediffComp_HasInstigator>()?.SetInstigator(this.parent.pawn);
                 }
 

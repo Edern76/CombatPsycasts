@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelBase">
+        <defName>CP_DebugShirt</defName>
+        <label>debug psychic shirt</label>
+        <description>You cheater.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <smeltable>false</smeltable>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>1600</WorkToMake>
+            <Mass>0.25</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicEntropyMax>9999999</PsychicEntropyMax>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+		<tradeability>None</tradeability>
+		<generateCommonality>0</generateCommonality>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
+</Defs>

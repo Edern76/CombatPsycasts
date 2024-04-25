@@ -19,7 +19,7 @@ namespace VFECP
         public override bool ShouldContinueCasting() => base.ShouldContinueCasting() && ShouldContinueChoking();
 
         public override bool CanHitTarget(LocalTargetInfo target) => base.CanHitTarget(target) && target.Pawn is Pawn pawn &&
-                                                                     pawn.health.hediffSet.GetNotMissingParts().Any(p => p.def == BodyPartDefOf.Neck);
+                                                                     pawn.health.hediffSet.GetNotMissingParts().Any(p => p.def == CombatPsycasts.DefOfs.BodyPartDefOf.Neck);
 
         public override void Cast(params GlobalTargetInfo[] targets)
         {
@@ -31,7 +31,7 @@ namespace VFECP
                     hediff.TryGetComp<HediffComp_ReducesOverTime>().ShouldReduce = false;
 
                 HediffUtils.AddOrUpdateHediffWithSeverity(curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke,
-                    curTarget.Pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Neck).FirstOrDefault(), 0.05f);
+                    curTarget.Pawn.def.race.body.GetPartsWithDef(CombatPsycasts.DefOfs.BodyPartDefOf.Neck).FirstOrDefault(), 0.05f);
             }
         }
 
@@ -45,7 +45,7 @@ namespace VFECP
                 if (currentlyCasting)
                 {
                     HediffUtils.AddOrUpdateHediffWithSeverity(curTarget.Pawn, HediffDefOf.CP_Hediff_PsychicChoke,
-                        curTarget.Pawn.def.race.body.GetPartsWithDef(BodyPartDefOf.Neck).FirstOrDefault(), 0.10f);
+                        curTarget.Pawn.def.race.body.GetPartsWithDef(CombatPsycasts.DefOfs.BodyPartDefOf.Neck).FirstOrDefault(), 0.10f);
                     curTarget.Pawn?.FindLethalInstigatorHediff()?.TryGetComp<HediffComp_HasInstigator>()?.SetInstigator(pawn);
                 }
             }

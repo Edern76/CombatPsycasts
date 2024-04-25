@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj": {}
+    "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj": {
+    "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
+        "projectUniqueName": "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
         "projectName": "VFECP",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
-        "packagesPath": "C:\\Users\\legod\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\CombatPsycasts\\Source\\VFECP\\obj\\",
+        "projectPath": "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
+        "packagesPath": "C:\\Users\\gawei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\legod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gawei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,13 +36,16 @@
           "dependencies": {
             "Krafs.Rimworld.Ref": {
               "target": "Package",
-              "version": "[1.4.3541, )"
+              "version": "[1.5.4066, )"
             }
           }
         }
       },
       "runtimes": {
         "win": {
+          "#import": []
+        },
+        "win-arm64": {
           "#import": []
         },
         "win-x64": {

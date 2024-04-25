@@ -37,12 +37,8 @@ namespace CombatPsycasts.Comps
                     toApply.SetAllowDamagePropagation(true);
                     SoundDefOf.CP_HeadExplosion.PlayOneShot(SoundInfo.InMap((TargetInfo)(Thing)target));
                     target.health.DropBloodFilth();
+                    target.TakeDamage(toApply);
                 }
-                else
-                {
-                    toApply.SetAllowDamagePropagation(false);
-                }
-                target.TakeDamage(toApply);
                 
             }    
         }

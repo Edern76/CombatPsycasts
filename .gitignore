@@ -6,3 +6,5 @@ Source/CombatPsycasts/.idea
 Source/CombatPsycasts/bin/*
 Source/CombatPsycasts/obj/*
 Source/CombatPsycasts/CombatPsycasts.sln.DotSettings.user
+Source/VFECP/obj/*
+Source/VFECP/bin/*

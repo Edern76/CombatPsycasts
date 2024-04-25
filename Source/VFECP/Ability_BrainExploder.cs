@@ -13,13 +13,17 @@ namespace VFECP
         {
             base.Cast(targets);
             foreach (var target in targets)
+            {
                 if (target.Thing is Pawn p)
+                {
                     DoBrainExplosion(pawn, p);
+                }
+            }
         }
 
         protected void DoBrainExplosion(Pawn caster, Pawn target)
         {
-            if (target?.health.hediffSet.GetBrain() is BodyPartRecord brain)
+            if (target?.health?.hediffSet?.GetBrain() is BodyPartRecord brain)
             {
                 var toApply = new DamageInfo(DamageDefOf.Bomb, target.health.hediffSet.GetPartHealth(brain), 1f,
                     -1f, caster, brain);
@@ -29,11 +33,8 @@ namespace VFECP
                     toApply.SetAllowDamagePropagation(true);
                     SoundDefOf.CP_HeadExplosion.PlayOneShot(SoundInfo.InMap((TargetInfo)(Thing)target));
                     target.health.DropBloodFilth();
+                    target.TakeDamage(toApply);
                 }
-                else
-                    toApply.SetAllowDamagePropagation(false);
-
-                target.TakeDamage(toApply);
             }
         }
     }

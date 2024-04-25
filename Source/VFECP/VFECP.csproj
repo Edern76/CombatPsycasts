@@ -18,7 +18,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\1.4\VPE\Assemblies\</OutputPath>
+    <OutputPath>..\..\1.5\VPE\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -26,14 +26,14 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\1.5\VPE\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CombatPsycasts">
-      <HintPath>..\..\1.4\Assemblies\CombatPsycasts.dll</HintPath>
+      <HintPath>..\..\1.5\Assemblies\CombatPsycasts.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Core" />
@@ -42,12 +42,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="VanillaPsycastsExpanded">
-      <HintPath>..\..\..\VanillaPsycastsExpanded\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2842502659\1.5\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\VanillaExpandedFramework\1.4\Assemblies\VFECore.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>F:\SteamLibrary\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -61,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.4.3541</Version>
+      <Version>1.5.4066</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -2,4 +2,8 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CUnityEngine_002ECoreModule_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Ccommon_005CRimWorld_005CRimWorldWin64_005FData_005CManaged_005CUnityEngine_002Edll/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2009463077_005CCurrent_005CAssemblies_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2009463077_005CCurrent_005CAssemblies_005C0Harmony_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2023507013_005C1_002E5_005CAssemblies_005CVFECore_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=F_003A_005CSteamLibrary_005Csteamapps_005Cworkshop_005Ccontent_005C294100_005C2842502659_005C1_002E5_005CAssemblies_005CVanillaPsycastsExpanded_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Program Files\JetBrains\JetBrains Rider 2023.3.3\tools\MSBuild\Current\Bin\MSBuild.exe</s:String>
+	<s:Int64 x:Key="/Default/Environment/Hierarchy/Build/BuildTool/MsbuildVersion/@EntryValue">1114112</s:Int64></wpf:ResourceDictionary>

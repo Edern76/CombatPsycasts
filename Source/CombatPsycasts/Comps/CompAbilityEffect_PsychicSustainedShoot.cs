@@ -53,7 +53,12 @@ namespace CombatPsycasts.Comps
         }
         public bool ShouldContinueFiring() => shootCanReach && this.parent.CanCast && this.parent.pawn.drafter.Drafted && ThingIsStillStanding();
 
-        
+        public void Reset()
+        {
+            this.ShouldBeFiring = false;
+            this.shootCanReach = true;
+            this.forceFirstShot = true;
+        }
         public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
         {
             base.BaseApply(target, dest);

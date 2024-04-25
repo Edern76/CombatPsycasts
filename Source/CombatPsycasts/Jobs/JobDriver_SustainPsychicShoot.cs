@@ -18,7 +18,7 @@ namespace CombatPsycasts.Jobs
 
         public void OnEnd()
         {
-            comp.ShouldBeFiring = false;
+            comp.Reset();
         }
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
