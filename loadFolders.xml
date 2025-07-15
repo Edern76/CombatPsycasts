@@ -18,4 +18,10 @@
         <li>Common</li>
         <li IfModActive="vanillaexpanded.vpsycastse">1.5/VPE</li>
     </v1.5>
+	<v1.6>
+        <li>/</li>
+        <li>1.6</li>
+        <li>Common</li>
+        <li IfModActive="vanillaexpanded.vpsycastse">1.6/VPE</li>
+    </v1.6>
 </loadFolders>

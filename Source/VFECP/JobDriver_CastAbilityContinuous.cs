@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Verse.AI;
-using VFECore.Abilities;
+using VEF.Abilities;
 
 namespace VFECP
 {

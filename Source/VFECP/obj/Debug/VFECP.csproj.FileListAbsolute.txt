@@ -1,5 +1,6 @@
 C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.AssemblyReference.cache
 C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.CoreCompileInputs.cache
 C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\1.5\VPE\Assemblies\VFECP.dll
-C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.CopyComplete
 C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.dll
+C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\1.6\VPE\Assemblies\VFECP.dll
+C:\Users\gawei\Documents\Stuff\Dev\Rimworld Mods\CombatPsycasts\Source\VFECP\obj\Debug\VFECP.csproj.Up2Date

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "44fREHn/DNKng/rz3Mv80ypS6qGCHMz6TOdf8Lzy5L6khjChHvq5PaDNC8yyw1lAg0LBtP2ncWylux3atKfkGQ==",
+  "dgSpecHash": "HJgIXZIOGt8=",
   "success": true,
   "projectFilePath": "C:\\Users\\gawei\\Documents\\Stuff\\Dev\\Rimworld Mods\\CombatPsycasts\\Source\\VFECP\\VFECP.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gawei\\.nuget\\packages\\krafs.rimworld.ref\\1.5.4066\\krafs.rimworld.ref.1.5.4066.nupkg.sha512"
+    "C:\\Users\\gawei\\.nuget\\packages\\krafs.rimworld.ref\\1.6.4518\\krafs.rimworld.ref.1.6.4518.nupkg.sha512"
   ],
   "logs": []
 }

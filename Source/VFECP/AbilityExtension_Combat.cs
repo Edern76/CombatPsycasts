@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
-using VFECore.Abilities;
-using Ability = VFECore.Abilities.Ability;
+using VEF.Abilities;
+using Ability = VEF.Abilities.Ability;
 
 namespace VFECP
 {

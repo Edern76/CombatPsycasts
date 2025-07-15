@@ -2,7 +2,7 @@
 using System.Linq;
 using RimWorld.Planet;
 using Verse;
-using VFECore.Abilities;
+using VEF.Abilities;
 
 namespace VFECP
 {

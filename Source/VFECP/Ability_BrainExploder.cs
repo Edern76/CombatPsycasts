@@ -1,8 +1,9 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 using Verse.Sound;
-using Ability = VFECore.Abilities.Ability;
+using Ability = VEF.Abilities.Ability;
 using SoundDefOf = CombatPsycasts.DefOfs.SoundDefOf;
 
 namespace VFECP
@@ -16,17 +17,17 @@ namespace VFECP
             {
                 if (target.Thing is Pawn p)
                 {
-                    DoBrainExplosion(pawn, p);
+                    this.DoBrainExplosion(this.pawn, p);
                 }
             }
         }
 
-        protected void DoBrainExplosion(Pawn caster, Pawn target)
+        public void DoBrainExplosion(Pawn caster, Pawn target)
         {
             if (target?.health?.hediffSet?.GetBrain() is BodyPartRecord brain)
             {
                 var toApply = new DamageInfo(DamageDefOf.Bomb, target.health.hediffSet.GetPartHealth(brain), 1f,
-                    -1f, caster, brain);
+                    -1f, caster, hitPart: brain);
                 if (Rand.Chance(0.5f))
                 {
                     toApply.SetAmount(999);
